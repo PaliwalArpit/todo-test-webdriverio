@@ -6,7 +6,7 @@ Feature: Make todo api call
   Scenario Outline: create a todo
     Given A contact
     I send GET request to /todos
-    Then I get response code 201
+    Then I get response code 200
 
     Scenario Outline: Update todo
     Given A contact

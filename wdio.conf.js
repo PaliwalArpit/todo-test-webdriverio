@@ -1,5 +1,5 @@
 const drivers = {
-    chrome: { version: '88.0.4324.96' }, // https://chromedriver.chromium.org/
+    chrome: { version: '89.0.4389.23' }, // https://chromedriver.chromium.org/
     firefox: { version: '0.27.0' }, // https://github.com/mozilla/geckodriver/releases
     chromiumedge: { version: '85.0.564.70' } // https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 }
@@ -114,7 +114,7 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         ['selenium-standalone', {
-            // logPath: 'logs',
+            logPath: 'logs',
             installArgs: { drivers }, // drivers to install
             args: { drivers } // drivers to use
         }]
