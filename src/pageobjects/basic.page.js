@@ -81,7 +81,7 @@ class BasicPage {
     checkFilterTodos(){
         this.completedFilter.click();
         const completedTodoslen = this.completedTodos.length;
-        console.log("==========="+completedTodoslen);
+        console.log("=="+completedTodoslen);
         if(completedTodoslen != 0){
             return true;
         }
